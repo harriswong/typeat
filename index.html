@@ -30,12 +30,6 @@
 						console.log(e);
 					}
 				})
-				.data( "autocomplete" )._renderItem = function( ul, item ) {
-					return $( "<li></li>" )
-						.data( "item.autocomplete", item )
-						.append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
-						.appendTo( ul );
-				};
 			});
 		</script>
 
@@ -43,10 +37,9 @@
 
 		<div class="ui-widget">
 			<label for="inputName">Input: </label>
-			<textarea id="inputName"></textarea>
-			<div>
-				Log:
-				<input id="inputName2"></input>
+			<div style="width: 500px;">
+				<textarea id="inputName" style="width:100%; margin: 0px; padding: 0px"></textarea>
+				<input id="inputName2" style="height:0px; border-width:0px; width:100%;"></input>
 			</div>
 		</div>
 
@@ -59,5 +52,3 @@
 		</div><!-- End demo-description -->
 	</body>
 </html>
-
-

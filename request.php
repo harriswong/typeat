@@ -2,7 +2,6 @@
 	$friends = array();
 	$returnFriends = array();
 	$_GET['term'] = urldecode(strtolower($_GET['term']));
-	
 	if ($_GET['term']) {
 		$friends = array (
 			'h1' => 'harris1', 
